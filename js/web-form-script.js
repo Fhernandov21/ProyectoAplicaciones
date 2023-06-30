@@ -7,6 +7,7 @@ let results = document.getElementsByClassName('results');
 
 function validate() {
     // Valida (casi) todos los campos del form
+    location.href = '#form-crearCuenta';
     if (!name.checkValidity()) {
         result_name.innerHTML = name.validationMessage;
     }
