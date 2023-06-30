@@ -1,6 +1,7 @@
 
 function initMap() {
-    
+
+// El mapa solo se implementa si el usuario permite al navegador localizar su ubicación
 if(navigator.geolocation){
     var success = function(position){
     var latlng = new google.maps.LatLng(position.coords.latitude, position.coords.longitude)
@@ -13,6 +14,8 @@ if(navigator.geolocation){
         }
         var map = new google.maps.Map(document.getElementById("mapa2"), myOptions)
     }
+
+
     navigator.geolocation.getCurrentPosition(success, function(msg){
         console.error( msg );
         map = new google.maps.Map(document.getElementById('mapa2'), {
