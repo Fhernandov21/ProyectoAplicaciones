@@ -34,10 +34,11 @@
               </select>
               <img id="imgProf2" src="../resources/img/pofeso.png" alt="imagenProfesión">
               <label id="labelMensaje" for="message">¿Por qué deseas colaborar?</label>
-              <textarea id="message" name="message" placeholder="Cuéntanos..."></textarea>
-
-              <label id="labelDirección">Tu dirección:</label>
-              <input type="text" id="name" placeholder="Tu dirección">
+              <textarea required id="message" name="message" placeholder="Cuéntanos..."></textarea>
+              <p id="result-message" class="results"></p>
+              <label for="direction" id="labelDirección">Tu dirección:</label>
+              <input type="text" id="direction" placeholder="Tu dirección" required>
+              <p id="result-dir" class="results"></p>
               <div id="mapa2">
                 <script async defer
                   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdHNRNQENRBEXBYRv0ZKDMwwpeHADF5XA&callback=initMap">
