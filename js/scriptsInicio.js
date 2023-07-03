@@ -83,3 +83,11 @@ document.body.appendChild(navBarVertical);
 
 
 
+window.onload = function() {
+  var divs = document.getElementsByClassName('miniaturaControlVideo');
+  for (const element of divs) {
+    element.onclick = function() {
+      window.location.href = 'video.html'; 
+    };
+  }
+};

@@ -20,19 +20,18 @@
           <video id="video-media" style="visibility:visible;" width="600" height="360" autoplay controls>
             <source src="../resources/video/sample-01.mp4" type="video/mp4">
           </video>
-          <ul>
-            <li>perros</li>
-            <li>educativo</li>
-            <li>nose</li>
+          <ul id="UlTags">
+            <li class="elementoCategorías">Educativo</li>
+            <li class="elementoCategorías">Perros</li>
           </ul>
-          <span><i>Categoría: </i>Mascotas</span>
+          <span class="elementoCategorías"><i>Categoría: </i>Mascotas</span>
           <div class="controls-bar">
-            <button id = "playBtn"> Play </button> 
-            <button id = "pauseBtn"> Pause </button>
-            <button id = "rwBtn"> Rewind </button>
+            <button id = "playBtn"> Reanudar </button> 
+            <button id = "pauseBtn"> Pausar </button>
+            <button id = "rwBtn"> Retroceder </button>
           </div>
         </div>
-        <button>Volver a ver videos</button>
+        <button class="button" onclick="volverVideos()">Volver a ver videos</button>
       </div>
       </div>
 

@@ -12,5 +12,10 @@ pause.addEventListener('click', ()=> {
 });
 
 rewind.addEventListener('click', () => {
-    media.load();
+    media.currentTime -=5;
 });
+
+
+function volverVideos(){
+    window.location.href = "videos.html"; 
+}
