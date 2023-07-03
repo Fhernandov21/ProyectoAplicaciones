@@ -10,12 +10,12 @@ navButtons.className = "nav-buttons";
 // Array de enlaces y sus correspondientes nombres
 let links = [
   { href: "#", name: "Inicio" },
-  { href: "../html/videos.html", name: "Videos" },
-  { href: "../html/artículos.html", name: "Artículos" },
-  { href: "../html/inicio.html", name: "Fami.ly"},
-  { href: "../html/nosotros.html", name: "Nosotros" },
-  { href: "../html/suscripciones.html", name: "Suscríbete" },
-  { href: "../html/formularioColab.html", name: "Apóyanos!" }
+  { href: "html/videos.html", name: "Videos" },
+  { href: "html/artículos.html", name: "Artículos" },
+  { href: "html/inicio.html", name: "Fami.ly"},
+  { href: "html/nosotros.html", name: "Nosotros" },
+  { href: "html/suscripciones.html", name: "Suscríbete" },
+  { href: "html/formularioColab.html", name: "Apóyanos!" }
 ];
 
 // Crea y agrega los botones de enlace al contenedor
