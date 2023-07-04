@@ -7,6 +7,7 @@
     <title>Family Suscríbete</title>
     <link rel="stylesheet" href="../css/style.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -20,13 +21,24 @@
               <div class="form-container" id="form-crearCuenta">
                 
                 <div class="form-inputs" id="inputsLogin">
-                  <div class="userContent">
+                  <div class="userContent" id="user-content">
+                    
                     <img src="../resources/img/userIcon.png" alt="usuario" class="user-photo">
+                    
                   </div> 
+                  <div>
+                    <button>Subir foto</button>
+                    <button id="cameraButton">Tomar foto</button>
+                  </div>
+
                   <label for="name">Nombre:</label>
                   <input type="text" id="name" name="name" placeholder="Tu nombre :D">
                   <label for="email">Email:</label>
                   <input type="email" id="email" name="email" placeholder="Tu email &#9993">
+                  <label for="password">Contraseña:</label>
+                  <input type="password" id="password" name="password" placeholder="Tu contraseña">
+                  <label for="password">Vuelva a escribir su contraseña:</label>
+                  <input type="password" id="password-2" name="password-2" placeholder="Tu contraseña">
                   <a href="#"><div class="button" id="btnDestacado">Crear cuenta</div></a>
 
                 </div>
@@ -59,4 +71,5 @@
       <div class="overlay"></div>
       <script src="../js/scriptsInicio.js"></script>
       <script src="../js/scriptNavBar.js"></script>
+      <script src="../js/camera-script.js"></script>
     </body>

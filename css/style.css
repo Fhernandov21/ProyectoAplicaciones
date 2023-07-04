@@ -937,7 +937,7 @@ footer a{
   border-style: inset;  
 }
 
-.user-photo {
+.user-photo, #video-camera {
   width: 100px;
   height: 100px;
   border-radius: 50%;
