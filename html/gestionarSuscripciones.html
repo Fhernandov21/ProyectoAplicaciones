@@ -33,7 +33,7 @@
 
     <div id="fondoSecciónVideos" class="fondoSección">
       <div class="contenedorSección" id="contenedorSVideos">
-        <h1>Suscripciones</h1>
+        <h1>Usuarios</h1>
         <div class="search-bar" id="barra-regular">
             <input type="text" placeholder="Buscar">
             <button type="submit">Ir</button>
@@ -71,10 +71,10 @@
 
     <div id="fondoSecciónVideos" class="fondoSección">
       <div class="contenedorSección" id="contenedorSVideos">
-        <h1>Usuarios</h1>
+        <h1>Suscripciones</h1>
           <div class="contenedorObjetos" id="objetosUsuarios">
             <div id="TablaSus">
-              <table id="tablaUsuarios">
+              <table id="tablaSuscripciones">
                 <thead>
                     <th>Nivel</th>
                     <th>Artículos</th>
@@ -82,40 +82,54 @@
                     <th>Precios</th>
                 </thead>
                 <tr>
-                    <td>Fher</td><td>04/07/2023</td><td>05/07/2023</td><td>Premium</td>
+                  <td>Estándar</td><td>10</td><td>0</td><td>$10</td>
                 </tr>
                 <tr>
-                    <td>Fher</td><td>04/07/2023</td><td>05/07/2023</td><td>Premium</td>
+                  <td>Exclusiva</td><td>20</td><td>1</td><td>$15</td>
                 </tr>
                 <tr>
-                    <td>Fher</td><td>04/07/2023</td><td>05/07/2023</td><td>Premium</td>
+                  <td>Premium</td><td>Todo</td><td>3</td><td>$20</td>
                 </tr>
                 <tr>
-                    <td>Fher</td><td>04/07/2023</td><td>05/07/2023</td><td>Premium</td>
+                  <td>Estándar</td><td>10</td><td>0</td><td>$10</td>
                 </tr>
             </table> 
             <div class="contenedorObjetos" id="botonesAdminSus">
-              <button class="button" id="btnAdmin">Continuar</button>
-              <button class="button" id="btnAdmin">Continuar</button>
-              <button class="button" id="btnAdmin">Continuar</button>
+              <button class="button" id="btnAdmin">Nueva</button>
+              <button class="button" id="btnAdmin">Editar</button>
+              <button class="button" id="btnAdminSave" onclick="GuardarCambios()" disabled>Guardar</button>
+              <button class="button" id="btnAdminCancel">Eliminar</button>
             </div>
+          
 
 
           </div>
           <div class="form-inputs" id="inputsAdminSus">
             <label for="name">Nombre:</label>
-            <input class="listInput" type="text" id="name" name="name"">
+
+            
+=======
+            <input class="txtEnable" type="text" id="name" name="name" disabled>
             <label>Artículos disponibles al mes:</label>
-            <input class="listInput" type="number" id="artDisp" name="artDisp" placeholder="">
+            <input class="txtEnable" type="number" id="artDisp" name="artDisp" disabled>
             <label>Consultas disponibles al mes:</label>
-            <input class="listInput" type="number" id="conDisp" name="conDisp" placeholder="">
-            <label>Precio:</label>
-            <input class="listInput" type="number" id="precio" name="precio" placeholder="">
+            <input class="txtEnable" type="number" id="conDisp" name="conDisp" disabled>
+            <label>Precio ($):</label>
+            <input class="txtEnable" type="number" id="precio" name="precio" disabled>
+            <button class="button" id="btnCancelar"disabled>Cancelar</button>
+
           </div>
-          <div class="form-inputs" id="inputsAdminSus">
+          <div class="form-inputs" id="inputsAdminSus2">
             <label id="labelMensaje" for="message">Cambiar imagen</label>
             <div class="userContent">
-              <img src="../resources/img/userIcon.png" alt="usuario" class="user-photo">
+                                  
+              <img src="../resources/img/userIcon.png" id="user-icon" alt="usuario" class="user-photo">
+              <video id="video-camera" class="hidden"></video>
+              <canvas id="canvas" class="hidden" width="112" height="112"></canvas>
+            </div> 
+            <div id="button-photo">
+              <button class="button-2" >Subir foto</button>
+              <button class="button-2 hidden" id="takePhotoButton">Capturar foto</button>
             </div> 
             <label id="labelMensaje" for="message">Descripción</label>
             <textarea required id="message" name="message" placeholder="Cuéntanos..."></textarea>
@@ -150,4 +164,5 @@
       <script src="../js/scriptsInicio.js"></script>
       <script src="../js/scriptNavBar.js"></script>
       <script src="../js/scriptMenúAnvorguesa.js"></script>
+      <script src="../js/scriptTabla.js"></script>
 </body>
