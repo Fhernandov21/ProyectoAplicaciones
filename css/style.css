@@ -144,8 +144,10 @@ a{
 }
 
 
-.button-2 {
-  font-size: 20px;
+
+
+#upload-button::before {
+  content: "Subir foto";
 }
 
 #canvas {
@@ -1236,6 +1238,30 @@ footer a{
 }
 
 /*#################################*/
+
+.button-2 {
+  font-size: 20px;
+  width: 120px;
+  height: 44px;
+}
+
+.button-2 input[type="file"] {
+  appearance: none;
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.button-2 label {
+  width: 100%;
+  font-family: "Sansita";
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: none;
+  margin: auto;
+  text-shadow: none;
+  cursor: pointer;
+}
 
 .results {
   margin: 0;
