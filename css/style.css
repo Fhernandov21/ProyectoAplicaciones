@@ -942,7 +942,7 @@ footer a{
   text-shadow:0px 5px 5px #00000082;
 }
 
-#form-crearCuenta{
+#form-crearCuenta, #form-colab{
   display: flex;
   justify-content: center;
   align-items: center;
