@@ -245,6 +245,9 @@ a{
 #btnAdmin:hover{
   background-color: #378f83;
 }
+#btnAdminSave:hover{
+  background-color: #378f83;
+}
 
 
 
@@ -1025,6 +1028,10 @@ label {
   resize: none;
 }
 
+#tablaSuscripciones{
+  overflow: auto;
+}
+
 #TablaSus input{
   width: 200px;
   padding: 10px;
@@ -1094,7 +1101,7 @@ label {
 .user-name {
   font-family: "Hepta Slab", Arial, monospace;
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 1.5rem;
   color: #000000;
   text-shadow:0px 5px 5px #00000082;
 }
@@ -1102,10 +1109,9 @@ label {
 .user-description {
   font-family: "Hepta Slab", Arial, monospace;
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 1rem;
   color: #000000;
   text-shadow:0px 5px 5px #00000082;
-
 }
 
 .userContent {

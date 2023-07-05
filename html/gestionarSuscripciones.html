@@ -33,7 +33,7 @@
 
     <div id="fondoSecciónVideos" class="fondoSección">
       <div class="contenedorSección" id="contenedorSVideos">
-        <h1>Suscripciones</h1>
+        <h1>Usuarios</h1>
         <div class="search-bar" id="barra-regular">
             <input type="text" placeholder="Buscar">
             <button type="submit">Ir</button>
@@ -71,7 +71,7 @@
 
     <div id="fondoSecciónVideos" class="fondoSección">
       <div class="contenedorSección" id="contenedorSVideos">
-        <h1>Usuarios</h1>
+        <h1>Suscripciones</h1>
           <div class="contenedorObjetos" id="objetosUsuarios">
             <div id="TablaSus">
               <table id="tablaSuscripciones">
@@ -96,8 +96,8 @@
             </table> 
             <div class="contenedorObjetos" id="botonesAdminSus">
               <button class="button" id="btnAdmin">Nueva</button>
-              <button class="button" id="btnAdmin" onclick="EnableTexts()">Editar</button>
-              <button class="button" id="btnAdminSave" onclick="GuardarCambios()">Guardar</button>
+              <button class="button" id="btnAdmin">Editar</button>
+              <button class="button" id="btnAdminSave" onclick="GuardarCambios()" disabled>Guardar</button>
               <button class="button" id="btnAdminCancel">Eliminar</button>
             </div>
           
@@ -113,7 +113,7 @@
             <input class="txtEnable" type="number" id="conDisp" name="conDisp" disabled>
             <label>Precio ($):</label>
             <input class="txtEnable" type="number" id="precio" name="precio" disabled>
-            <button class="button" id="btnCancelar" onclick="DisableTexts()" disabled>Cancelar</button>
+            <button class="button" id="btnCancelar"disabled>Cancelar</button>
           </div>
           <div class="form-inputs" id="inputsAdminSus2">
             <label id="labelMensaje" for="message">Cambiar imagen</label>

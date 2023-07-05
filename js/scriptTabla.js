@@ -33,16 +33,51 @@ var table = document.getElementById('tablaSuscripciones');
       textboxes[3].value = values[3];
     }
 
+    let adminButtons = document.querySelectorAll('#btnAdmin');
     let btnCancelar = document.getElementById('btnCancelar');
     let btnAdminSave = document.getElementById('btnAdminSave');
-    let btnAdmin = document.getElementsByClassName('btnAdmin');
+    let tablaSuscripciones = document.getElementById('tablaSuscripciones');
+    btnCancelar.classList.add('disable-hover');
+    btnAdminSave.classList.add('disable-hover');
+
+    adminButtons.forEach(function(button) {
+
+      button.addEventListener('click', function() {
+        if(!EnableTexts()){
+          return;
+        };
+        adminButtons.forEach(function(btn) {
+          btn.disabled = true;
+        });
+    
+        // Activar los botones btnCancelar y btnAdminSave
+        btnCancelar.disabled = false;
+        btnAdminSave.disabled = false;
+
+      });
+    });
+    btnCancelar.addEventListener('click', function() {
+      // Revertir y desactivar los botones btnCancelar y btnAdminSave
+      btnCancelar.disabled = true;
+      btnAdminSave.disabled = true;
+
+      // Activar los botones adminBtn
+      adminButtons.forEach(function(btn) {
+        btn.disabled = false;
+      });
+      DisableTexts();
+    });
+
+
     function EnableTexts(){
         if(!isFileSelected()){
             return false;
         }
         for(var i = 0; i<=3; i++){
             textboxes[i].disabled=false;
+
         }
+        return true;
     }
 
     function DisableTexts(){
