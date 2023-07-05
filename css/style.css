@@ -1355,3 +1355,7 @@ footer a{
 .hidden {
   display: none;
 }
+
+.listInput {
+  font-size: 24px;
+}
