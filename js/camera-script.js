@@ -8,7 +8,7 @@ let canvas = document.getElementById('canvas');
 let video = document.getElementById('video-camera');
 let userIcon = document.getElementById('user-icon');
 let context = canvas.getContext('2d');
-var streaming = null;
+let streaming = null;
 
 cameraButton.addEventListener("click", ()=>{
     cameraButton.classList.add('hidden');

@@ -1316,7 +1316,7 @@ footer a{
 
 .button-2 {
   font-size: 20px;
-  width: 120px;
+  width: 144px;
   height: 44px;
 }
 
@@ -1325,16 +1325,17 @@ footer a{
   display: none;
   visibility: hidden;
   opacity: 0;
+  z-index: -1;
 }
 
 .button-2 label {
+  display: block;
+  position: absolute;
   width: 100%;
-  font-family: "Sansita";
-  font-weight: bold;
-  font-size: 20px;
-  box-shadow: none;
-  margin: auto;
-  text-shadow: none;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
   cursor: pointer;
 }
 
