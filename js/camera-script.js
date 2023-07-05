@@ -57,6 +57,18 @@ takePhoto.addEventListener("click", function() {
 });
 
 file.addEventListener('change', e => {
+    if (!canvas.classList.contains('hidden')) {
+        canvas.classList.add('hidden');
+    }
+
+    if (!video.classList.contains('hidden')) {
+        video.classList.add('hidden');
+    }
+
+    if (userIcon.classList.contains('hidden')) {
+        userIcon.classList.remove('hidden');
+    }
+
     if (e.target.files[0]) {
         const reader = new FileReader();
         reader.onload = function (e) {
