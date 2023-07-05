@@ -1035,9 +1035,17 @@ footer a{
   border-style: inset;  
 }
 
-.user-photo, #video-camera {
+.user-photo {
   width: 100px;
   height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+#video-camera {
+  width: 112px;
+  height: 112px;
   border-radius: 50%;
   object-fit: cover;
   margin: 0 auto;
