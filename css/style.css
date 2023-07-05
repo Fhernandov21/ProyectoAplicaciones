@@ -15,7 +15,7 @@ table{
   font-size: 1.5rem;
   font-style: bold;
   border-collapse: collapse;
-    line-height: 3rem;
+  line-height: 3rem;
 }
 
 table thead{
@@ -31,8 +31,7 @@ table thead{
 }
 
 th, td{
-  border: 3px black;
-  border-style: ridge;
+
   padding: 0;
 }
 
@@ -223,15 +222,31 @@ a{
   background-color: #378f83;
 }
 
-
+.txtEnable{
+  font-size: 20px;
+}
 #btnAdmin{
   background-color:#12574e;
   font-size: 1.5rem;
+}
+#btnAdminSave{
+  background-color:#12574e;
+  font-size: 1.5rem;
+}
+#btnAdminCancel{
+  background-color: #a52a2a; 
+  font-size: 1.5rem;
+}
+
+#btnAdminCancel:hover
+{background-color: #ff5940;
 }
 
 #btnAdmin:hover{
   background-color: #378f83;
 }
+
+
 
 .nav-buttons .button{
   flex: 1;
@@ -518,9 +533,12 @@ a{
   flex-wrap: nowrap;
 }
 
+.selected{
 
-#tablaUsuarios{
+}
+#tablaSuscripciones{
   width: 500px;
+  cursor: pointer;
 }
 
 #inputsAdminSus{
@@ -532,10 +550,18 @@ a{
 
 #botonesAdminSus{
   margin-top: 10px;
-  justify-content: left;
+  justify-content: center;
   background-color: #ffffff00; 
   height: auto;
 }
+
+#inputsAdminSus2{
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 0;
+  width: auto;
+  text-align: center
+;}
 
 #objetosMisión, #objetosFundadores{
   align-items: stretch; 
@@ -845,6 +871,10 @@ footer a{
   width: 100%;
 }
 
+#botonesAdminSus{
+  max-width: 500px;
+}
+
 .search-bar input[type="text"] {
   width: 100%;
   height: 100%;
@@ -927,11 +957,17 @@ footer a{
 }
 
 .form-inputs {
+  font-family: 'Roboto', Courier, monospace;
   padding: 40px;
   width: 400px;
 }
 
-.form-inputs label {
+.forms-inputs input{
+  font-size: 1.5rem;
+  font-family: 'Roboto', Courier, monospace;
+}
+
+label {
   font-family: "Hepta Slab";
   display: block;
   margin-bottom: 10px;
@@ -947,10 +983,10 @@ footer a{
   width: calc(100% - 10px);
 }
 
-#inputsLogin{
-  width: 100%;
+#btnCancelar{
+  background-color: #a52a2a9a; 
+  font-size: 1.5rem;
 }
-
 
 
 #inputsLogin .user-photo{
@@ -987,6 +1023,20 @@ footer a{
   border-width: 6px;
   border-style: inset;  
   resize: none;
+}
+
+#TablaSus input{
+  width: 200px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-color: #24baa6;
+  border-width: 6px;
+  border-style: inset;  
+  resize: none;
+  margin-left: 15px;
 }
 
 .form-inputs select{
@@ -1158,9 +1208,7 @@ footer a{
     display: inline-block;
   }
 
-  #form-crearCuenta{
-    width: 350px;
-  }
+
 
   #mapa{ 
     width: 900px;
