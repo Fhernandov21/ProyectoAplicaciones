@@ -9,6 +9,8 @@ let result_message = document.getElementById('result-message');
 let result_dir = document.getElementById('result-dir');
 let results = document.getElementsByClassName('results');
 
+let clear_btn = document.getElementById('clear-btn');
+
 function validate() {
     // Valida (casi) todos los campos del form
     location.href = '#form-colab';
@@ -42,3 +44,11 @@ function clearResults() {
         results[i].innerHTML = "";
     }
 }
+
+clear_btn.addEventListener("click", ()=>{
+    location.href = '#form-colab';
+    name.value = "";
+    email.value = "";
+    message.value = "";
+    direction.value = "";
+});

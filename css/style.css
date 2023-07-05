@@ -1008,7 +1008,7 @@ footer a{
   font-family: "Sansita" Arial, monospace;
 }
 
-#submit-btn {
+#submit-btn, #clear-btn {
   background-color: #188162b4;
   color: #fff;
   border: none;
