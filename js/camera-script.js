@@ -8,11 +8,17 @@ let canvas = document.getElementById('canvas');
 let video = document.getElementById('video-camera');
 let userIcon = document.getElementById('user-icon');
 let context = canvas.getContext('2d');
-var streaming = null;
+let streaming = null;
+
+const file = document.getElementById('inputFile');
 
 cameraButton.addEventListener("click", ()=>{
     cameraButton.classList.add('hidden');
     takePhoto.classList.remove('hidden');
+
+    if (!canvas.classList.contains('hidden')) {
+        canvas.classList.add('hidden');
+    }
     video.classList.remove('hidden');
     userIcon.classList.add('hidden');    
 
@@ -46,4 +52,28 @@ takePhoto.addEventListener("click", function() {
     video.classList.add('hidden');
     context.drawImage(video, 0, 0, 112, 112);
     stopCamera();
+    cameraButton.classList.remove('hidden');
+    takePhoto.classList.add('hidden');
+});
+
+file.addEventListener('change', e => {
+    if (!canvas.classList.contains('hidden')) {
+        canvas.classList.add('hidden');
+    }
+
+    if (!video.classList.contains('hidden')) {
+        video.classList.add('hidden');
+    }
+
+    if (userIcon.classList.contains('hidden')) {
+        userIcon.classList.remove('hidden');
+    }
+
+    if (e.target.files[0]) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            userIcon.src= e.target.result;
+        }
+        reader.readAsDataURL(e.target.files[0]);
+    }
 });
