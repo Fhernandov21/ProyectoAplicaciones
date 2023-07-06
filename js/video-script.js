@@ -9,10 +9,14 @@ const seekBar = document.getElementById("seek-bar");
 const volumeBar = document.getElementById("volume-bar");
 
 play.addEventListener('click', ()=> {
+    play.classList.add('hidden')
+    pause.classList.remove('hidden')
     media.play();
 });
 
 pause.addEventListener('click', ()=> {
+    pause.classList.add('hidden')
+    play.classList.remove('hidden')
     media.pause();
 });
 
@@ -39,7 +43,8 @@ function volverVideos(){
 }
 
 media.addEventListener('timeupdate', () => {
-    seekBar.value = media.currentTime / media.duration * seekBar.max
+
+    seekBar.value = media.currentTime / media.duration * seekBar.max;
   })
   
   seekBar.addEventListener('change', () => {
