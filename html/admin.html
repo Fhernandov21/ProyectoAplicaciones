@@ -9,22 +9,114 @@
     
 </head>
 
-<body>
-     <nav class="navbar" id="navbarArtículos">
-        
-        <div class="nav-buttons">
-            <a href="inicio.html"><div class="button" id="btnArt">Inicio</div></a>
-            <a href="videos.html"><div class="button" id="btnArt">Videos</div></a>
-            <a href="artículos.html"><div class="button" id="btnArt">Artículos</div></a>
-            
-            <div class="page-name">Fami.ly</div>
-  
-            <a href="nosotros.html"><div class="button" id="btnArt">Nosotros</div></a>
-            <a href="suscripciones.html"><div class="button" id="btnArt">Suscríbete</div></a>
-            <a href="formularioColab.html"><div class="button" id="btnArtDestacado">Apóyanos!</div></a>
-          </div>
-    </nav>   
+<body> 
+
+    <div class="menu-container">
+        <div class="bubble" id="bubble">
+        </div>
+                    
+        <div class="menu" id="menu">
+          <ul>
+            <li class="search-bar">                
+                <input type="text" placeholder="Buscar">
+                <button type="submit">Ir</button>
+            </li>
+            <li><a href="admin.html">Administrar videos</a></li>
+            <li><a href="gestionarSuscripciones.html">Gestionar suscripciones</a></li>
+          </ul>
+        </div>
+    </div>     
+    
+
+    <div id="fondoSecciónVideos" class="fondoSección">
+        <div class="contenedorSección" id="contenedorSAdmin">
+
+            <h1>Editar contenido</h1>
+            <div class="search-bar" id="barra-regular">
+                <input type="text" placeholder="Buscar">
+                <button type="submit">Ir</button>
+            </div>
+            <div class="contenedorObjetos" id="objetosTopContenido">
+                <label class="labelGrande" for="text">Título:</label>
+                <input class="inputLargo" type="text">
+                <button class="buttonTag">Mostrar en inicio</button>
+                <input type="checkbox">
+            </div>
+            <div class="contenedorObjetos" id="objetosGestionarContenido">
+                <div id="objetosGeneralVideo">
+                    <div class="miniaturaEscoger" id="miniaturaGrande">
+                        <div class="controlBotón">
+
+                            <div class="fondoBotón"></div>
+                            <button class="button" id="btnSubir">Subir video</button>
+                        </div>    
+                        
+                    </div>
+                    <div class="contenedorObjetos" id="objetosCat">
+                        <div class="contenedorObjetos" id="objetosLabelButton">
+                            <label class="labelGrande" for="text">Etiquetas:</label>
+                            <button class="button" id="btnAdmin">Agregar</button>
+                        </div>
+                        <select name="cmbTags" id="cmbTags">
+                            <option value="Profesor">Mascotas</option>
+                            <option value="Psicólogo">Infantil</option>
+                            <option value="Pediatra">Matrimonio</option>
+                            <option value="Otro">soy una categoría</option>
+                        </select>
+                    </div>
+                    <div class="contenedorObjetos" id="contenedorCategorías">
+                        <button class="buttonTag">Mascotas</button>
+                        <button class="buttonTag">Perros</button>
+                        <button class="buttonTag">Niños</button>
+                        <button class="buttonTag">Hola mundo</button>
+                        <button class="buttonTag">Hello world</button>
+                    </div>
+                </div>
+                <div class="form-inputs" id="inputsAdminVideos">
+                        <label for="name">Descripción:</label>
+                        <textarea required id="message" name="message" placeholder="Aquí va la descripción..."></textarea>
+                        <label  for="text">Miniatura:</label>
+                        <div class="miniaturaEscoger" id="miniaturaPequeña">
+                            <div class="controlBotón" id="controlBotónPeque">
+                                <div class="fondoBotón">
+                                </div>
+                                <button class="button" id="btnSubir2">Subir imagen</button>
+                            </div>                            
+                        </div>
+                        <label  for="text">Relación de aspecto: 16:9</label>
+
+                </div>
+                <div class="user-card" id="user-cardMetrics">
+                    <h1>Métricas</h1>
+                    <label class="labelMétrica" for="text">Soy una métrica:</label>
+                    <label class="labelValor" for="text">diavlo 1 montón</label>
+                    <label class="labelMétrica" for="text">Soy una métrica:</label>
+                    <label class="labelValor" for="text">diavlo 1 montón</label>
+                    <label class="labelMétrica" for="text">Soy una métrica:</label>
+                    <label class="labelValor" for="text">diavlo 1 montón</label>
+                    <label class="labelMétrica" for="text">Soy una métrica:</label>
+                    <label class="labelValor" for="text">diavlo 1 montón</label>
+                    <label class="labelMétrica" for="text">Soy una métrica:</label>
+                    <label class="labelValor" for="text">diavlo 1 montón</label>
+                    <label class="labelMétrica" for="text">Soy una métrica:</label>
+                    <label class="labelValor" for="text">diavlo 1 montón</label>
+                    <label class="labelMétrica" for="text">Soy una métrica:</label>
+                    <label class="labelValor" for="text">diavlo 1 montón</label>
+                </div>
+            </div>
+            <div class="contenedorObjetos" id="buttonsGestionarContenido">
+                <button class="button" id="btnAdminCancel">Cancelar</button>
+                <button class="button" id="btnAdmin">Guardar</button>
+            </div>
+        </div>
+    </div>
+
+
 
     <div class="overlay"></div>
     <script src="../js/scriptsInicio.js"></script>
+    <script src="../js/scriptNavBar.js"></script>
+    <script src="../js/scriptMenúAnvorguesa.js"></script>
+    <script src="../js/fileSelector.js"></script>
+
 </body>
