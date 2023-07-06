@@ -15,8 +15,8 @@
     <div class="fondoSección" id="fondoSecciónVideos">
       <div class="contenedorSección" id="contenedorSCuenta">
           <h1>Conviértete en un colaborador! </h1>
-        <div class="form-wrapper">
-          <div class="form-container" id="form-crearCuenta">
+        <div class="form-wrapper" id="formwColab">
+          <div class="form-container" id="form-colab">
   
             <div class="form-inputs" id="inputsLogin">
               <label for="name">Nombre:</label>
@@ -35,6 +35,8 @@
               <img id="imgProf2" src="../resources/img/pofeso.png" alt="imagenProfesión">
               <label id="labelMensaje" for="message">¿Por qué deseas colaborar?</label>
               <textarea required id="message" name="message" placeholder="Cuéntanos..."></textarea>
+              <button id="record" class="button-2">Grabar</button>
+              <button id="stopRecord" class="button-2">Detener</button>
               <p id="result-message" class="results"></p>
               <label for="direction" id="labelDirección">Tu dirección:</label>
               <input type="text" id="direction" placeholder="Tu dirección" required>
@@ -47,6 +49,7 @@
               <!--
               <a href="apóyanos.html" id="submit-btn">Continuar</a>-->
               <button id="submit-btn">Continuar</button>
+              <button id="clear-btn" class="btnAdminCancel">Limpiar campos</button>
             </div>
             <img id="imgProf" src="../resources/img/pofeso.png" alt="imagenProfesión">
           </div>
@@ -83,5 +86,6 @@
     <script src="../js/scriptFormDinámico.js"></script>
     <script src="../js/soyelmapa2.js"></script>
     <script src="../js/web-form-script.js"></script>
+    <script src="../js/record-script.js"></script>
 
 </body>
