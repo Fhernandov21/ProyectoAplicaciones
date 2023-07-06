@@ -124,6 +124,9 @@ a{
 }
 
 .controls-bar{
+  display: flex;
+  justify-content: first baseline;
+  align-items: center;
   padding: 10px;
 }
 
@@ -164,8 +167,20 @@ a{
   margin: 5px;
 }
 
-/*
-#playBtn,#pauseBtn,#rwBtn, .button-2{
+#controls-bar {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #0A3630;
+  display: flex;
+  justify-content: center;
+}
+
+#seek-bar {
+  width: 60%;
+}
+
+.button-2, .button-control{
   z-index: 2;
   text-align: center;
   font-family: "Sansita";
@@ -180,7 +195,7 @@ a{
   border: black;
   border-width: 2px;
   background-color:#12574e;
-}*/
+}
 
 
 
@@ -1421,4 +1436,11 @@ label {
   margin: auto;
   display: flex;
   align-items: center;
+}
+
+.button-control {
+  display: flex;
+  align-items: center;
+  height: 44px;
+  padding: 5px;
 }
