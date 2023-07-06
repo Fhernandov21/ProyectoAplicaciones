@@ -22,10 +22,10 @@
             <div class="form-inputs" id="inputsLogin">
               <label for="name">Nombre:</label>
               <input type="text" id="name" name="name" placeholder="Tu nombre :D" required>
-              <p id="result-name" class="results"></p>
+              <p id="result-name" class="results hidden"></p>
               <label for="email">Email:</label>
               <input type="email" id="email" name="email" placeholder="Tu email &#9993" required>
-              <p id="result-email" class="results"></p>
+              <p id="result-email" class="results hidden"></p>
               <label for="cmbProfesión">Tu profesión:</label>
               <select id="cmbProfesión" onchange=añadirTxtOtro()>
                 <option value="Profesor">Profesor</option>
@@ -35,15 +35,14 @@
               </select>
               <img id="imgProf2" src="../resources/img/pofeso.png" alt="imagenProfesión">
               <label id="labelMensaje" for="message">¿Por qué deseas colaborar?</label>
+
               <textarea required id="message" name="message" placeholder="Cuéntanos..."></textarea>
-              <button id="record" class="button-2">Grabar</button>
-              <button id="stopRecord" class="button-2">Detener</button>
-              <p id="result-message" class="results"></p>
+              <p id="result-message" class="results hidden"></p>
               <button id="record" class="button-2">Grabar</button>
               <button id="stopRecord" class="button-2">Detener</button>
               <label for="direction" id="labelDirección">Tu dirección:</label>
               <input type="text" id="direction" placeholder="Tu dirección" required>
-              <p id="result-dir" class="results"></p>
+              <p id="result-dir" class="results hidden"></p>
               <div id="mapa2">
                 <script async defer
                   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdHNRNQENRBEXBYRv0ZKDMwwpeHADF5XA&callback=initMap">
