@@ -1446,6 +1446,7 @@ label {
 }
 
 #video-container video {
+  height: 100%;
   margin: auto;
   display: flex;
   align-items: center;
