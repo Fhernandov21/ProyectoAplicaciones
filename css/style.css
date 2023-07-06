@@ -132,6 +132,8 @@ a{
 
 
 
+
+
 .button {
   z-index: 2;
   text-align: center;
@@ -180,7 +182,7 @@ a{
   width: 60%;
 }
 
-.button-2, .button-control{
+.button-2, .button-control, #editorBar button, #editorBar select{
   z-index: 2;
   text-align: center;
   font-family: "Sansita";
@@ -1050,7 +1052,10 @@ label {
   font-size: 1.5rem;
 }
 
-
+.ainputLargo {
+  width: 50%;
+  padding: 5px;
+}
 
 .inputLargo{
   padding: 10px 0 10px 10px;
@@ -1086,6 +1091,10 @@ input[type="checkbox"]{
 
 }
 
+.checkboxCustom {
+  width: 32px;
+  height: 32px;
+}
 
 #objetosGeneralVideo>*{
   margin-top: 5px;
@@ -1701,3 +1710,46 @@ select{
   align-items: center;
 }
 
+#articleEditor {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#bottomArticleEditor {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#articleEditor textarea {
+  width: 95%;
+  height: 50vh;
+  font-size: 16px;
+  
+}
+
+#editorBar{
+  width: 95%;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  padding: 8px 4px;
+  background-color: #0A3630;
+}
+
+#editorBar button, #editorBar select{
+  font-size: 18px;
+  padding: 10px 15px;
+  background-color:#12574e;
+}
+
+#inputsAdminArticles {
+  padding: 0;
+  margin: 0;
+}

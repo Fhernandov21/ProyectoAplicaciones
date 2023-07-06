@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Artículos</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body> 
+
+    <div class="menu-container">
+        <div class="bubble" id="bubble">
+        </div>
+                    
+        <div class="menu" id="menu">
+          <ul>
+            <li class="search-bar">                
+                <input type="text" placeholder="Buscar">
+                <button type="submit">Ir</button>
+            </li>
+            <li><a href="admin.html">Administrar videos</a></li>
+            <li><a href="gestionarSuscripciones.html">Gestionar suscripciones</a></li>
+          </ul>
+        </div>
+    </div>     
+    
+
+    <div id="fondoSecciónVideos" class="fondoSección">
+        <div class="contenedorSección" id="contenedorSAdmin">
+            <h1>Crear artículo</h1>
+            <div class="contenedorObjetos" id="objetosTopContenido">
+                <label class="labelGrande" for="text">Título:</label>
+                <input class="ainputLargo" type="text">
+                <button class="buttonTag">Mostrar en inicio</button>
+                <input type="checkbox" class="checkboxCustom" width="36px" height="36px">
+            </div>
+            <div class="contenedorObjetos" id="objetosGestionarContenido">
+                <div id="articleEditor">
+                    <div id="editorBar">
+                        <Select>
+                            <option value="value1">Párrafo</option>
+                            <option value="value2" selected>Encabezado</option>
+                            <option value="value3">Sub-Encabezado 1</option>
+                            <option value="value4">Sub-Encabezado 2</option>
+                            <option value="value5">Sub-Encabezado 3</option>
+                            <option value="value6">Título de página</option>
+                        </Select>
+                        <button>
+                            B
+                        </button>
+                        <button>
+                            I
+                        </button>
+                        <button>
+                            U
+                        </button>
+                        <button>
+                            <i class="bi bi-list-ul"></i>
+                        </button>
+                        <button>
+                            <i class="bi bi-list-ol"></i>
+                        </button>
+                        <button>
+                            <i class="bi bi-link"></i>
+                        </button>
+                        <button>
+                            <i class="bi bi-image"></i>
+                        </button>
+                    </div>
+                    <textarea required id="message" name="message" placeholder="Aquí va la descripción..."></textarea>
+                </div>
+                <div id="bottomArticleEditor">
+                    <div id="objetosGeneralVideo">
+                        <div class="form-inputs" id="inputsAdminArticles">
+                            <label for="name">Descripción:</label>
+                            <textarea required id="message" name="message" placeholder="Aquí va la descripción..."></textarea>
+                        </div>
+                        <div class="contenedorObjetos contenedorObjetosArticulos" id="objetosCat">
+                            <div class="contenedorObjetos" id="objetosLabelButton">
+                                <label class="labelGrande" for="text">Etiquetas:</label>
+                                <button class="button" id="btnAdmin">Agregar</button>
+                            </div>
+                            <select name="cmbTags" id="cmbTags">
+                                <option value="Profesor">Mascotas</option>
+                                <option value="Psicólogo">Infantil</option>
+                                <option value="Pediatra">Matrimonio</option>
+                                <option value="Otro">soy una categoría</option>
+                            </select>
+                        </div>
+                        <div class="contenedorObjetos contenedorObjetosArticulos" id="contenedorCategorías">
+                            <button class="buttonTag">Mascotas</button>
+                            <button class="buttonTag">Perros</button>
+                            <button class="buttonTag">Niños</button>
+                            <button class="buttonTag">Hola mundo</button>
+                            <button class="buttonTag">Hello world</button>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="user-card" id="user-cardMetrics">
+                        <h1>Métricas</h1>
+                        <label class="labelMétrica" for="text">Soy una métrica:</label>
+                        <label class="labelValor" for="text">diavlo 1 montón</label>
+                        <label class="labelMétrica" for="text">Soy una métrica:</label>
+                        <label class="labelValor" for="text">diavlo 1 montón</label>
+                        <label class="labelMétrica" for="text">Soy una métrica:</label>
+                        <label class="labelValor" for="text">diavlo 1 montón</label>
+                        <label class="labelMétrica" for="text">Soy una métrica:</label>
+                        <label class="labelValor" for="text">diavlo 1 montón</label>
+                        <label class="labelMétrica" for="text">Soy una métrica:</label>
+                        <label class="labelValor" for="text">diavlo 1 montón</label>
+                        <label class="labelMétrica" for="text">Soy una métrica:</label>
+                        <label class="labelValor" for="text">diavlo 1 montón</label>
+                        <label class="labelMétrica" for="text">Soy una métrica:</label>
+                        <label class="labelValor" for="text">diavlo 1 montón</label>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="contenedorObjetos" id="buttonsGestionarContenido">
+                <button class="button" id="btnAdminCancel">Cancelar</button>
+                <button class="button" id="btnAdmin">Guardar</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="overlay"></div>
+    <script src="../js/scriptsInicio.js"></script>
+    <script src="../js/scriptNavBar.js"></script>
+    <script src="../js/scriptMenúAnvorguesa.js"></script>
+    <script src="../js/fileSelector.js"></script>
+
+</body>
