@@ -461,6 +461,20 @@ a{
   background-color: #97a2c6;
 }
 
+.contenedorArticulo p {
+  color: white;
+  font-family: 'Hepta Slab', Courier, monospace;
+  font-size: 1.4rem;
+  margin: 2vh 3vw;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.contenedorArticulo img {
+  width: 75%;
+  height: auto;
+  max-height: 350px;
+}
 
 #navbarArtículos{
   background-color: #6a61cc;
