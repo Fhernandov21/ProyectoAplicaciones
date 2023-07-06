@@ -1402,8 +1402,12 @@ label {
 }
 
 .results {
+  font-size: 16px;
   margin: 0;
   padding: 0;
+  color: #ffffff;
+  margin-top: -10px;
+  margin-bottom: 20px;
 }
 
 .hidden {
