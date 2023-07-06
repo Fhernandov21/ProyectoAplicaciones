@@ -164,7 +164,7 @@ a{
   margin: 5px;
 }
 
-
+/*
 #playBtn,#pauseBtn,#rwBtn, .button-2{
   z-index: 2;
   text-align: center;
@@ -180,7 +180,7 @@ a{
   border: black;
   border-width: 2px;
   background-color:#12574e;
-}
+}*/
 
 
 
@@ -202,11 +202,11 @@ a{
   justify-content: center;
   padding: 0.8rem 0;
 }
-
+/*
 .controls-bar{
   justify-content: center;
   display: none;
-}
+}*/
 
 #UlTags{
   font-size: 1.5rem;
@@ -1415,4 +1415,10 @@ label {
 
 .listInput {
   font-size: 24px;
+}
+
+#video-container video {
+  margin: auto;
+  display: flex;
+  align-items: center;
 }

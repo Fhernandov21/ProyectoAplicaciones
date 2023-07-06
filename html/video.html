@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Family</title>
     <link rel="stylesheet" href="../css/style.css">
-
+    
 </head>
 
 <body>
@@ -17,19 +17,25 @@
       <div class="contenedorSección" id="contenedorSCuenta" >
           <h1>Vídeo perro </h1>
         <div class="form-wrapper video-container">
-          <video id="video-media" style="visibility:visible;" width="600" height="360" autoplay controls>
-            <source src="../resources/video/sample-01.mp4" type="video/mp4">
-          </video>
+          <div id="video-container">
+            <video id="video-media" style="visibility:visible;" width="600" height="360" autoplay>
+              <source src="../resources/video/sample-01.mp4" type="video/mp4">
+            </video>
+            <div class="controls-bar">
+              <button class="button-control" id = "playBtn"> Reanudar </button> 
+              <button class="button-control" id = "pauseBtn"> Pausar </button>
+              <button class="button-control" id = "rwBtn"> Retroceder </button>
+              <input type="range" id="seek-bar" value="0">
+              <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+            </div>
+          </div>
+         
           <ul id="UlTags">
             <li class="elementoCategorías">Educativo</li>
             <li class="elementoCategorías">Perros</li>
           </ul>
           <span class="elementoCategorías"><i>Categoría: </i>Mascotas</span>
-          <div class="controls-bar">
-            <button id = "playBtn"> Reanudar </button> 
-            <button id = "pauseBtn"> Pausar </button>
-            <button id = "rwBtn"> Retroceder </button>
-          </div>
+          
         </div>
         <button class="button" onclick="volverVideos()">Volver a ver videos</button>
       </div>
