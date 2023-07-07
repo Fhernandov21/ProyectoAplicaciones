@@ -132,6 +132,8 @@ a{
 
 
 
+
+
 .button {
   z-index: 2;
   text-align: center;
@@ -180,7 +182,7 @@ a{
   width: 60%;
 }
 
-.button-2, .button-control{
+.button-2, .button-control, #editorBar button, #editorBar select{
   z-index: 2;
   text-align: center;
   font-family: "Sansita";
@@ -473,6 +475,20 @@ a{
   background-color: #97a2c6;
 }
 
+.contenedorArticulo p {
+  color: white;
+  font-family: 'Hepta Slab', Courier, monospace;
+  font-size: 1.4rem;
+  margin: 2vh 3vw;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.contenedorArticulo img {
+  width: 75%;
+  height: auto;
+  max-height: 350px;
+}
 
 #navbarArtículos{
   background-color: #6a61cc;
@@ -1036,7 +1052,10 @@ label {
   font-size: 1.5rem;
 }
 
-
+.ainputLargo {
+  width: 50%;
+  padding: 5px;
+}
 
 .inputLargo{
   padding: 10px 0 10px 10px;
@@ -1072,6 +1091,10 @@ input[type="checkbox"]{
 
 }
 
+.checkboxCustom {
+  width: 32px;
+  height: 32px;
+}
 
 #objetosGeneralVideo>*{
   margin-top: 5px;
@@ -1312,6 +1335,10 @@ select{
   border-style: inset;  
 }
 
+
+#user-cardMetrics{
+  min-width: 210px;
+}
 
 #user-cardMetrics h1{
   background-color: inherit;
@@ -1628,6 +1655,7 @@ select{
   font-size: 20px;
   width: 144px;
   height: 44px;
+  position: relative;
 }
 
 .button-2 input[type="file"] {
@@ -1687,3 +1715,46 @@ select{
   align-items: center;
 }
 
+#articleEditor {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#bottomArticleEditor {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#articleEditor textarea {
+  width: 95%;
+  height: 50vh;
+  font-size: 16px;
+  
+}
+
+#editorBar{
+  width: 95%;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  padding: 8px 4px;
+  background-color: #0A3630;
+}
+
+#editorBar button, #editorBar select{
+  font-size: 18px;
+  padding: 10px 15px;
+  background-color:#12574e;
+}
+
+#inputsAdminArticles {
+  padding: 0;
+  margin: 0;
+}

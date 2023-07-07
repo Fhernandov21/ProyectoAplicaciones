@@ -1,6 +1,7 @@
 
-  
-let navBar = document.createElement("nav");
+let navBar = document.createElement("navArt");
+
+
 navBar.className = "navbar";
 
 // Crea el contenedor de botones dentro del <nav>
@@ -40,7 +41,7 @@ navBar.appendChild(navButtons);
 document.body.insertBefore(navBar, document.body.firstChild);
 
 // Crea el segundo <nav> con la clase "navSimple"
-let navSimple = document.createElement("nav");
+let navSimple = document.createElement("navArt");
 navSimple.className = "navSimple";
 
 // Crea los elementos dentro del segundo <nav>
@@ -80,14 +81,25 @@ links.forEach(function(link) {
 // Agrega el contenedor vertical de botones al final del body
 document.body.appendChild(navBarVertical);
 
-
-
+if(document.title=="Family Artículos"){
+  navBar.id="navbarArtículos";
+  navSimple.id = "navSimpleArtículos";
+  navBarVertical.id = "navBarVerticalArtículos";
+}
 
 window.onload = function() {
   var divs = document.getElementsByClassName('miniaturaControlVideo');
   for (const element of divs) {
-    element.onclick = function() {
-      window.location.href = 'video.html'; 
-    };
+    if(element.parentElement.parentElement.parentElement.id=="contenedorSVideos"){
+      element.onclick = function() {
+        window.location.href = 'video.html'; 
+      };
+      }
+      else{
+        element.onclick = function() {
+          window.location.href = 'articulo.html'; 
+        };
+      }
+    
   }
 };
