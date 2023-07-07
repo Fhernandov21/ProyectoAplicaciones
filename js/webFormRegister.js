@@ -1,19 +1,18 @@
-let submit = document.getElementById('submit-btn');
 let name = document.getElementById('name');
 let email = document.getElementById('email');
-let message = document.getElementById('message');
-let direction = document.getElementById('direction');
+let password = document.getElementById('password');
+let password2 = document.getElementById('password-2');
 let result_name = document.getElementById('result-name');
 let result_email = document.getElementById('result-email');
-let result_message = document.getElementById('result-message');
-let result_dir = document.getElementById('result-dir');
+let result_pass = document.getElementById('result-password');
+let result_pass2 = document.getElementById('result-password-2');
+let btn = document.getElementById('btnDestacado');
 let results = document.getElementsByClassName('results');
-
-let clear_btn = document.getElementById('clear-btn');
 
 function validate() {
     clearResults();
-    location.href = '#form-colab';
+    location.href = '#form-wrapper';
+    
     if (!name.checkValidity()) {
         result_name.innerHTML = name.validationMessage;
     }
@@ -22,12 +21,16 @@ function validate() {
         result_email.innerHTML = email.validationMessage;
     }
 
-    if (!message.checkValidity()) {
-        result_message.innerHTML = message.validationMessage;
+    if (!password.checkValidity()) {
+        result_pass.innerHTML = password.validationMessage;
     }
 
-    if (!direction.checkValidity()) {
-        result_dir.innerHTML = direction.validationMessage;
+    if (!password2.checkValidity()) {
+        result_pass2.innerHTML = password2.validationMessage;
+    }
+
+    if (password.checkValidity() && password2.checkValidity() && password != password2) {
+        result_pass2.innerHTML = "Las contraseñas no son iguales";
     }
 
     visibleResults();
@@ -35,12 +38,13 @@ function validate() {
     setTimeout(clearResults, 5000);
 }
 
-submit.addEventListener('click', validate);
+btn.addEventListener('click', validate);
 
 function visibleResults() {
     let n = results.length;
     for (let i = 0; i < n; i++)
     {
+        
         results[i].classList.remove('hidden');
     }
 }
@@ -53,11 +57,3 @@ function clearResults() {
         results[i].classList.add('hidden');
     }
 }
-
-clear_btn.addEventListener("click", ()=>{
-    location.href = '#form-colab';
-    name.value = "";
-    email.value = "";
-    message.value = "";
-    direction.value = "";
-});
