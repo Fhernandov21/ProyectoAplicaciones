@@ -1336,6 +1336,10 @@ select{
 }
 
 
+#user-cardMetrics{
+  min-width: 210px;
+}
+
 #user-cardMetrics h1{
   background-color: inherit;
 }
@@ -1651,6 +1655,7 @@ select{
   font-size: 20px;
   width: 144px;
   height: 44px;
+  position: relative;
 }
 
 .button-2 input[type="file"] {

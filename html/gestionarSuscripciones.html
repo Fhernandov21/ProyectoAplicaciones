@@ -24,6 +24,7 @@
             </li>
             <li><a href="admin.html">Administrar videos</a></li>
             <li><a href="gestionarSuscripciones.html">Gestionar suscripciones</a></li>
+            <li><a href="adminArticulos.html">Administrar artículos</a></li>
           </ul>
         </div>
     </div>     
@@ -118,16 +119,18 @@
           </div>
           <div class="form-inputs" id="inputsAdminSus2">
             <label id="labelMensaje" for="message">Cambiar imagen</label>
-            <div class="userContent">
-                                  
+            <div class="userContent" id="user-content">                   
               <img src="../resources/img/userIcon.png" id="user-icon" alt="usuario" class="user-photo">
               <video id="video-camera" class="hidden"></video>
               <canvas id="canvas" class="hidden" width="112" height="112"></canvas>
             </div> 
             <div id="button-photo">
-              <button class="button-2" >Subir foto</button>
-              <button class="button-2 hidden" id="takePhotoButton">Capturar foto</button>
-            </div> 
+              <button class="button-2" id="uploadButton">
+                Subir foto
+                <label for="inputFile"></label>
+                <input type="file" id="inputFile">
+              </button>
+            </div>
             <label id="labelMensaje" for="message">Descripción</label>
             <textarea required id="message" name="message" placeholder="Cuéntanos..."></textarea>
           </div>
