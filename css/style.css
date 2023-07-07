@@ -411,7 +411,7 @@ a{
 
 #contenedorSAdmin{
   padding: 5px;
-  margin: 0 4.05% 0 4.05%;
+  margin: 0;
   background-color: #188162b4;
   border-radius: 7px 7px 20px 20px;
   height: auto;
@@ -595,8 +595,8 @@ a{
 }
 
 #inputsAdminVideos{
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-right: 20px;
+  padding-left: 20px;
   padding-top: 0;
   width: auto;
 }
@@ -1059,7 +1059,7 @@ label {
 
 .inputLargo{
   padding: 10px 0 10px 10px;
-  width: 60%;
+  width: 50%;
   margin-left: 10px;
   border-radius: 5px;
   border: none;
@@ -1109,7 +1109,7 @@ input[type="checkbox"]{
 
 
 #miniaturaGrande{
-  width: 570px;
+  width: 470px;
   height: 320px;
 }
 
@@ -1213,7 +1213,7 @@ select{
 #contenedorCategorías{
   display: flex;
   background-color: #00ffcc;
-  max-width: 540px;
+  max-width: 450px;
   padding: 10px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   border-color: #24baa6;
@@ -1757,4 +1757,9 @@ select{
 #inputsAdminArticles {
   padding: 0;
   margin: 0;
+}
+
+.nuevoContenedor {
+  width: 100%;
+  margin: 0 auto;
 }
